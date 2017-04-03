@@ -1,3 +1,3 @@
-<?php include menu.php; ?>
-
-<?php include footer.php; ?>
+<?php include "menu.php"; ?>
+Home page
+<?php include "footer.php"; ?>
