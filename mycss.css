@@ -1,4 +1,37 @@
 #login {
   float: right;
+}
+#login .login-button {
+  border-radius: 35px;
+  border: #E1DFDF;
+  background-color: E1DFDF;
+  font-size: 15px;
+}
 
+#menu {
+  margin: auto;
+  padding: auto;
+  width: 70%;
+  position: relative;
+  text-align: center;
+  background-color: #CCE5FF;
+}
+
+#menu ul {
+  margin: auto;
+  list-style-type: none;
+  display: inline-block;
+}
+#menu li {
+  float: left;
+  margin: 0 10px;
+  text-align: center;
+}
+#menu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+#menu li a:hover {
+  background-color: #CCFFE5;
 }

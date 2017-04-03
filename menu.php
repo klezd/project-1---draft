@@ -9,11 +9,12 @@
 
       <table id="login">
         <tr>
-          <td><a href="signin.php" type="button" name="signin">Sign in</a></td>
-          <td><a href="signup.php" type="button" name="signup">Sign up</a></td>
+          <td><button href="signin.php" class="login-button" type="button" name="signin">Sign in</button></td>
+          <td>  </td>
+          <td><button href="signup.php" type="button" class="login-button" name="signup">Sign up</button></td>
         </tr>
       </table>
-
+      &nbsp;
       <div id = "menu">
         <ul>
           <li><a href="home.php" name="home">Home</a></li>
