@@ -13,8 +13,9 @@
           <td>  </td>
           <td><button href="signup.php" type="button" class="login-button" name="signup">Sign up</button></td>
         </tr>
+        <tr></tr>
       </table>
-      &nbsp;
+      &nbsp;&nbsp;
       <div id = "menu">
         <ul>
           <li><a href="home.php" name="home">Home</a></li>
@@ -22,5 +23,5 @@
           <li><a href="cart.php" name="cart">Shopping Cart</a></li>
         </ul>
       </div>
-      <hr style="width:75%;" />
+      <hr style="width: 45%;" />
       <div id="content">
