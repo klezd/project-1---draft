@@ -14,7 +14,6 @@
 /* menu bar */
 #menu {
   margin: 1.5% auto;
-  padding: auto;
   position: relative;
   text-align: center;
   background-color: #CCE5FF;
@@ -46,4 +45,18 @@
 #content {
   width: 75%;
   margin: auto;
+}
+
+
+/* login and signup forms */
+
+form {
+  margin: auto;
+  text-align: center;
+  width: auto;
+  padding: 5px;
+}
+.siginform {
+  width: 50%;
+  padding: 10px;
 }
