@@ -1,4 +1,4 @@
-<?php include "menu.php"; ?>
+<?php include "navigator.php"; ?>
 
 <h2 style="text-align:center;"> Reset Password </h2>
 <form class="form-horizontal signinform" method="post" action="" style="width:500px; padding: 10px; margin:auto;">
