@@ -19,11 +19,11 @@
           </tr>
 
           <tr style="text-align:center;">
-            <td><br><input type="radio" name="verySastified" value=""></td>
-            <td><br><input type="radio" name="sastified" value=""></td>
-            <td><br><input type="radio" name="normal" value=""></td>
-            <td><br><input type="radio" name="unsastified" value=""></td>
-            <td><br><input type="radio" name="totalyUnsastified" value=""></td>
+            <td><br><input type="radio" name="rate" value="verySastified"></td>
+            <td><br><input type="radio" name="rate" value="sastified"></td>
+            <td><br><input type="radio" name="rate" value="normal"></td>
+            <td><br><input type="radio" name="rate" value="unsastified"></td>
+            <td><br><input type="radio" name="rate" value="totalyUnsastified"></td>
           </tr>
         </table>
       </form>
