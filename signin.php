@@ -16,23 +16,23 @@
       <input type="password" class="form-control" id="pwd" placeholder="Enter password" required>
     </div>
   </div>
-  <div class="form-group row">
-    <div class="col-sm-offset-2 col-sm-6">
-
-        <div>
-          Forgot your password? Click <a href="forgotPass.php">here</a>!
-        </div>
-
-    </div>
-
-  </div>
-
   <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-6">
+    <div class="col-sm-offset-7 col-sm-8">
+      &emsp;&ensp;&nbsp;
       <button type="submit" class="btn btn-default" name="btnSignin">Sign In</button>
       &ensp;
       <button type="button" class="btn btn-default" name="btnCancel">Cancel</button>
     </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-offset-6 col-sm-8">
+        <div>
+          <br>
+          &nbsp;
+          Forgot your password? Click <a href="forgotPass.php">here</a>!
+        </div>
+    </div>
+
   </div>
 </fieldset>
 </form>
