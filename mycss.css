@@ -71,4 +71,27 @@ h2 {
   margin: 0 100px;
 }
 
-/* login and signup forms */
+/* feedback */
+.feedback {
+  width: 40%;
+  margin: auto;
+}
+.rateIcon {
+  border-collapse: separate;
+  border-spacing: 20px 0;
+}
+
+.rateIcon td {
+  padding: 0 10px;
+}
+
+fieldset {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+}

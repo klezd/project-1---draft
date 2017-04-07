@@ -19,9 +19,9 @@
   <div class="form-group">
     <div class="col-sm-offset-7 col-sm-8">
       &emsp;&ensp;&nbsp;
-      <button type="submit" class="btn btn-default" name="btnSignin">Sign In</button>
+      <button type="submit" class="btn btn-info" name="btnSignin">Sign In</button>
       &ensp;
-      <button type="button" class="btn btn-default" name="btnCancel">Cancel</button>
+      <button type="button" class="btn" name="btnCancel">Cancel</button>
     </div>
   </div>
   <div class="form-group row">
