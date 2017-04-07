@@ -1,4 +1,7 @@
-/* login-button */
+h2 {
+  text-align: center;
+}
+/* login-button in header */
 #login {
   margin: 10px 3px auto auto;
   float: right;}
@@ -69,18 +72,3 @@
 }
 
 /* login and signup forms */
-
-form {
-  margin: auto;
-  text-align: center;
-  width: auto;
-  padding: 5px;
-}
-.siginform {
-  width: 50%;
-  padding: 10px;
-}
-.sigupform {
-  width: 75%;
-  padding: 10px;
-}
