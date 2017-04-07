@@ -1,6 +1,6 @@
 <?php include "menu.php"; ?>
 
-<h2 style="text-align:center;"> WELCOME BACK, USER! </h2>
+<h2 style="text-align:center;"> Welcome back, USER! </h2>
 <form class="form-horizontal signinform" method="post" action="" style="width:500px; padding: 10px; margin:auto;">
   <div class="form-group">
     <label class="control-label col-sm-2" for="uname">Username</label>
@@ -9,7 +9,7 @@
     </div>
   </div>
   <div class="form-group">
-    <label class="control-label col-sm-2" for="pwd">Password:</label>
+    <label class="control-label col-sm-2" for="pwd">Password</label>
     <div class="col-sm-10">
       <input type="password" class="form-control" id="pwd" placeholder="Enter password" required>
     </div>
