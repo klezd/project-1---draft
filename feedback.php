@@ -1,6 +1,6 @@
 <?php include "navigator.php"; ?>
   <h2> Feedback for Asian Aroma </h2>
-<<<<<<< HEAD
+
   <div class="feedback">
     <div class="form-group">
       <label for="comment">Write Your Comment Here:</label>
@@ -61,7 +61,5 @@
 
   </div>
   <br>  <br>
-=======
-  
->>>>>>> master
+
 <?php include "footer.php"; ?>
