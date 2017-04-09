@@ -78,7 +78,7 @@ h2 {
 }
 .rateIcon {
   border-collapse: separate;
-  border-spacing: 20px 0;
+  border-spacing: 20px 0px;
 }
 
 .rateIcon td {
