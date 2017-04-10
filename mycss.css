@@ -4,12 +4,13 @@ h2 {
 /* login-button in header */
 #login {
   margin: 10px 3px auto auto;
-  float: right;}
+  margin-right: 20px;
+  float: right;
+}
 #login .login-button {
-  border-radius: 35px;
-  border: #E1DFDF solid 1px;
-  padding: 5px;
-  background-color: #E1DFDF;
+  padding-left: 10px;
+  padding-right: 18px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 15px;
   text-decoration: none;
 }
