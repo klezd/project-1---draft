@@ -1,20 +1,21 @@
 h2 {
   text-align: center;
 }
+
+hr {
+ margin-top : 0;
+ margin-bottom: 0;
+}
 /* login-button in header */
 #login {
   margin: 10px 3px auto auto;
-<<<<<<< Updated upstream
   margin-right: 20px;
   float: right;
 }
-=======
-  float: right;}
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
+
 #login .login-button {
   padding-left: 10px;
-  padding-right: 18px;
+  padding-right: 10px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 15px;
   text-decoration: none;
@@ -22,10 +23,9 @@ h2 {
 
 /* menu bar */
 #menu {
-  margin: 1.5% auto;
+  margin: 1.5% auto 0 auto;
   position: relative;
   text-align: center;
-  background-color: #CCE5FF;
 }
 #menu ul {
   margin: auto;
@@ -39,7 +39,7 @@ h2 {
 }
 #menu li a {
   display: block;
-  padding: 10px 15px;
+  padding: 10px 15px 5px 15px;
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -63,7 +63,6 @@ h2 {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #efefef;
   text-align: center;
 }
 #bottom ul{
@@ -101,105 +100,8 @@ fieldset {
     padding-right: 0.75em;
     border: 2px groove (internal value);
 }
-<<<<<<< Updated upstream
 
 .centerText {
   display: inline-block;;
   text-align: center;
 }
-=======
-=======
-#login .login-button {
-  border-radius: 35px;
-  border: #E1DFDF solid 1px;
-  padding: 5px;
-  background-color: #E1DFDF;
-  font-size: 15px;
-  text-decoration: none;
-}
-
-/* menu bar */
-#menu {
-  margin: 1.5% auto;
-  position: relative;
-  text-align: center;
-  background-color: #CCE5FF;
-}
-#menu ul {
-  margin: auto;
-  list-style-type: none;
-  display: inline-block;
-}
-#menu li {
-  float: left;
-  margin: 0 20px;
-  text-align: center;
-}
-#menu li a {
-  display: block;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-#menu li a:hover {
-  background-color: #CCFFE5;
-  color: Blue;
-}
-#menu li a:active { color: #330066;}
-
-/*div content */
-#content {
-  width: 75%;
-  margin: auto;
-}
-
-/*footer*/
-#bottom{
-  position: static;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
-}
-#bottom ul{
-  margin : auto;
-  list-style : none;
-  display: inline-block;
-}
-#bottom li {
-  float: left;
-  text-align: center;
-  margin: 0 100px;
-}
-
-/* feedback */
-.feedback {
-  width: 40%;
-  margin: auto;
-}
-.rateIcon {
-  border-collapse: separate;
-  border-spacing: 20px 0;
-}
-
-.rateIcon td {
-  padding: 0 10px;
-}
-
-fieldset {
-    display: block;
-    margin-left: 2px;
-    margin-right: 2px;
-    padding-top: 0.35em;
-    padding-bottom: 0.625em;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
-    border: 2px groove (internal value);
-}
-
-}
->>>>>>> Stashed changes
->>>>>>> Stashed changes
