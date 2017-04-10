@@ -1,6 +1,6 @@
 <?php include "navigator.php"; ?>
 <h2 style="text-align:center;">Sign Up</h2>
-<form method="post" action="" style="width:500px; padding: 10px; margin:auto;" id="signupform">
+<form method="post" action="home.php" style="width:500px; padding: 10px; margin:auto;" id="signupform">
   <div class="form-group row">
     <label class="control-label col-sm-4" for="name">Name</label>
     <div class="col-sm-8">
@@ -14,46 +14,33 @@
     </div>
   </div>
   <div class="form-group row">
-    <label class="control-label col-sm-4" for="uname">Username</label>
+    <label class="control-label col-sm-4" for="username">Username</label>
     <div class="col-sm-8">
-      <input type="text" class="form-control" id="uname" name="uname" placeholder="Enter username" required>
+      <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
     </div>
   </div>
   <div class="form-group row">
-    <label class="control-label col-sm-4" for="pwd">Password</label>
+    <label class="control-label col-sm-4" for="password">Password</label>
     <div class="col-sm-8">
-      <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Enter password" required>
+      <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
     </div>
   </div>
   <div class="form-group row">
-    <label class="control-label col-sm-4" for="rePwd">Repeat Password</label>
+    <label class="control-label col-sm-4" for="rePassword">Repeat Password</label>
     <div class="col-sm-8">
-      <input type="password" class="form-control" id="rePwd" placeholder="Enter password again" onChange=checkPassmatch() required>
-    </div>
-  </div>
-  <script>
-    function checkPassmatch() {
-      $("#rePwd").keyup( function(){
-      var $password = $("#pwd").val();
-      $("#validPass").html($password == $(this).val() ? "Passwords match." : "Passwords do not match!");
-      });
-      }
-    $(#rePwd).ready(function(){
-      $("#validPass").keyup(checkPassmatch);
-    });
-  </script>
-  <div id="validPass"></div>
-
-  <div class="form-group row">
-    <label class="control-label col-sm-4" for="tele">Telephone Number </label>
-    <div class="col-sm-8">
-      <input type="tel" class="form-control" id="tele" name="phone" placeholder="Enter telephone number">
+      <input type="password" class="form-control" name="rePassword" id="rePassword" placeholder="Enter password again" required>
     </div>
   </div>
   <div class="form-group row">
-    <label class="control-label col-sm-4" for="add">Address</label>
+    <label class="control-label col-sm-4" for="telephone">Telephone Number </label>
     <div class="col-sm-8">
-      <input type="text" class="form-control" id="add" name="add" placeholder="Enter address">
+      <input type="tel" class="form-control" id="telephone" name="telephone" placeholder="Enter telephone number">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="control-label col-sm-4" for="address">Address</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="address" name="address" placeholder="Enter address">
     </div>
   </div>
   <div class="form-group">
@@ -66,22 +53,22 @@
   </div>
 </form>
 <br>
-<? php
+<?php
 include "connection.php";
-if(isset($_POST('btnSignup'))){
- $add=$db->prepare("INSERT INTO customers(name, email, phone, address, username, password) VALUES(:name, :email, :phone, :add, :uname, :pwd)"); //name
- $add->bindParam(':name', $name);
- $add->bindParam(':email', $email);
- $add->bindParam(':phone', $phone);
- $add->bindParam(':add', $add);
- $add->bindParam(':name', $uname);
- $add->bindParam(':pwd', $pwd);
+if( isset($_POST['btnSignup']) ){
+ $add=$db->prepare("INSERT INTO customers(name, email, phone, address, username, password) VALUES(:name, :email, :telephone, :address, :username, :password)");
  $name=$_POST['name'];
  $email=$_POST['email'];
- $phone=$_POST['phone'];
- $add=$_POST['add'];
- $uname=$_POST['uname'];
- $pwd=$_POST['pwd'];
+ $telephone=$_POST['telephone'];
+ $add=$_POST['address'];
+ $username=$_POST['username'];
+ $password=$_POST['password'];
+ $add->bindParam(':name', $name);
+ $add->bindParam(':email', $email);
+ $add->bindParam(':telephone', $telephone);
+ $add->bindParam(':address', $address);
+ $add->bindParam(':username', $username);
+ $add->bindParam(':password', $password);
  $add->execute();
  }
  ?>
