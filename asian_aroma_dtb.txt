@@ -8,6 +8,7 @@ CREATE TABLE menu(
     dish_id SMALLINT PRIMARY KEY,
     dname VARCHAR(45) NOT NULL,
     img TEXT,
+    detailed TEXT,
     price DOUBLE NOT NULL,
     available DATE NOT NULL) Engine=InnoDB;
 
@@ -40,17 +41,17 @@ INSERT INTO menu(dish_id,dname,price,available) VALUES(25,'lotus bean sweet soup
 
 CREATE TABLE customers(
   customer_id INT PRIMARY KEY auto_increment,
-  name VARCHAR(45),
+  name VARCHAR(45) NOT NULL,
   email VARCHAR(80) NOT NULL,
-  phone VARCHAR(45),
-  address TEXT,
+  phone VARCHAR(15),
+  address VARCHAR(45),
   username VARCHAR(45) NOT NULL,
   password VARCHAR(80) NOT NULL) Engine=InnoDB;
 
 CREATE TABLE delivery(
   dish_id SMALLINT,
   customer_id INT,
-  quantity SMALLINT(5),
+  quantity SMALLINT(2),
   order_date DATE,
   FOREIGN KEY (dish_id)
 		REFERENCES menu(dish_id)
