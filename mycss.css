@@ -95,3 +95,8 @@ fieldset {
     padding-right: 0.75em;
     border: 2px groove (internal value);
 }
+
+.centerText {
+  display: inline-block;;
+  text-align: center;
+}
