@@ -1,6 +1,6 @@
 <?php include "navigator.php"; ?>
 <h2 style="text-align:center;">Sign Up</h2>
-<form method="post" action="" style="width:500px; padding: 10px; margin:auto;">
+<form method="post" action="" style="width:500px; padding: 10px; margin:auto;" id="signupform">
   <div class="form-group row">
     <label class="control-label col-sm-4" for="name">Name</label>
     <div class="col-sm-8">
@@ -68,7 +68,7 @@
 <br>
 <? php
 include "connection.php";
-
+if(isset($_POST('btnSignup'))){
  $add=$db->prepare("INSERT INTO customers(name, email, phone, address, username, password) VALUES(:name, :email, :phone, :add, :uname, :pwd)"); //name
  $add->bindParam(':name', $name);
  $add->bindParam(':email', $email);
@@ -83,5 +83,6 @@ include "connection.php";
  $uname=$_POST['uname'];
  $pwd=$_POST['pwd'];
  $add->execute();
+ }
  ?>
 <?php include "footer.php"; ?>
