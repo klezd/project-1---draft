@@ -28,18 +28,22 @@
   <div class="form-group row">
     <label class="control-label col-sm-4" for="rePwd">Repeat Password</label>
     <div class="col-sm-8">
-      <input type="password" class="form-control" id="rePwd" placeholder="Enter password again" required>
-      <script type="text/javascript">
-      $(function() {
-        $("#rePwd").keyup(function(){
-        var password = $("#pwd").val();
-        $("#validPass").html(password == $(this).val() ? "Passwords match." : "Passwords do not match!");
-        });
-      });
-      </script>
-      <div id="validPass"></div>
+      <input type="password" class="form-control" id="rePwd" placeholder="Enter password again" onChange=checkPassmatch() required>
     </div>
   </div>
+  <script>
+    function checkPassmatch() {
+      $("#rePwd").keyup( function(){
+      var $password = $("#pwd").val();
+      $("#validPass").html($password == $(this).val() ? "Passwords match." : "Passwords do not match!");
+      });
+      }
+    $(#rePwd).ready(function(){
+      $("#validPass").keyup(checkPassmatch);
+    });
+  </script>
+  <div id="validPass"></div>
+
   <div class="form-group row">
     <label class="control-label col-sm-4" for="tele">Telephone Number </label>
     <div class="col-sm-8">
@@ -63,7 +67,7 @@
 </form>
 <br>
 <? php
-include 'connection.php';
+include "connection.php";
 
  $add=$db->prepare("INSERT INTO customers(name, email, phone, address, username, password) VALUES(:name, :email, :phone, :add, :uname, :pwd)"); //name
  $add->bindParam(':name', $name);
