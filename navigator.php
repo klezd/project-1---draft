@@ -11,7 +11,7 @@
       <table id="login">
         <tr>
           <td><a href="signin.php" class="login-button" name="signin">Sign in</a></td>
-          <td style="width: 0.5em;"> </td>
+          <td style="border-left: 1px solid #0086b3;"> </td>
           <td><a href="signup.php" class="login-button" name="signup">Sign up</a></td>
         </tr>
         <tr></tr>
