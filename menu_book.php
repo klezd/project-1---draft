@@ -1,4 +1,5 @@
 <?php include "navigator.php"; ?>
+<div class="">
 <form>
 	  <label for="searchDate">You are looking for menu on </label>
     <input type="date" name="searchDate" value="">
@@ -51,5 +52,6 @@
 			<td><button type="button">Add to cart</button></td>
 		  </tr>
 		</table>
-  </div>  
+  </div>
+</div>
 <?php include "footer.php"; ?>
