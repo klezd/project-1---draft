@@ -7,20 +7,20 @@ some text -->
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="menu/almond tofu.jpg" style="width:100%">
-  <div class="text">Caption Text</div>
+  <img src="menu/almond tofu.jpg" style="height: 380px;width:100%">
+  <div class="text">Almond Tofu</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img src="menu/avocado pudding.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
+  <img src="menu/avocado pudding.jpg" style="height: 380px;width:100%">
+  <div class="text">Avocado Pudding</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <img src="menu/black sesame sweet soup.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
+  <img src="menu/black sesame sweet soup.jpg" style="height: 380px;width:100%">
+  <div class="text">Black Sesame Sweet Soup</div>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
