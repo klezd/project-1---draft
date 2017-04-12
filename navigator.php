@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title> Asian Aroma </title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="mycss.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="mycss.css" type="text/css"  rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
         <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
@@ -16,9 +16,9 @@
 
       <table id="login">
         <tr>
-          <td><a href="signin.php" class="login-button" name="signin">Sign in</a></td>
-          <td style="border-left: 1px solid #0086b3;"> </td>
-          <td><a href="signup.php" class="login-button" name="signup">Sign up</a></td>
+          <td><a href="signin.php" class="font" name="signin">Sign in</a></td>
+          <td style="border-left: 1px solid #994d00;"> </td>
+          <td><a href="signup.php" class="font" name="signup">Sign up</a></td>
         </tr>
         <tr></tr>
       </table>
@@ -30,5 +30,5 @@
           <li><a href="cart.php" name="cart">Shopping Cart</a></li>
         </ul>
       </div>
-      <hr style="width: 45%;" />
+      <hr style="width: 25%;" />
       <div id="content">

@@ -1,10 +1,15 @@
+body {
+  background-color: #bef8d3;
+}
 h2 {
   text-align: center;
 }
 
 hr {
+
  margin-top : 0;
  margin-bottom: 0;
+ border-top: 1px solid #60c57d;
 }
 /* login-button in header */
 #login {
@@ -13,17 +18,21 @@ hr {
   float: right;
 }
 
-#login .login-button {
+#login .font {
   padding-left: 10px;
   padding-right: 10px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 15px;
   text-decoration: none;
+  color: #994d00;
+  border-radius: 5px;
+  background-color: #CCFFE5;
 }
 
 /* menu bar */
 #menu {
-  margin: 1.5% auto 0 auto;
+  font-family: "Lucida Console", Monaco, monospace;
+  margin: 3% auto 0 auto;
   position: relative;
   text-align: center;
 }
@@ -35,20 +44,18 @@ hr {
 #menu li {
   float: left;
   margin: 0 20px;
-  text-align: center;
 }
 #menu li a {
   display: block;
   padding: 10px 15px 5px 15px;
   text-decoration: none;
-  color: black;
-  font-weight: bold;
+  color: #994d00;
 }
 #menu li a:hover {
   background-color: #CCFFE5;
-  color: Blue;
+  color: #60c57d;
 }
-#menu li a:active { color: #330066;}
+#menu li a:active { color: #33331a;}
 
 /*div content */
 #content {
@@ -56,24 +63,16 @@ hr {
   margin: auto;
 }
 
-/*footer*/
-#bottom{
-  position: static;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  text-align: center;
+.border{
+  border-left: 1px solid #994d00;
+  border-right: 1px solid #994d00;
 }
-#bottom ul{
-  margin : auto;
-  list-style : none;
-  display: inline-block;
-}
-#bottom li {
-  float: left;
-  text-align: center;
-  margin: 0 100px;
+
+.footer {
+  font-family: "Lucida Console", Monaco, monospace;
+  margin-top : 1.5%;
+  color: #994d00;
+  padding-left: 220px;
 }
 
 /* feedback */
@@ -105,3 +104,5 @@ fieldset {
   display: inline-block;;
   text-align: center;
 }
+
+.
