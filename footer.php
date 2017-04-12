@@ -1,21 +1,24 @@
       </div>
 <!-- footer -->
     <hr style="width: 50%;"/>
-    <div class="footer centerText">
-          <div class="container">
+    <div class="footer footerBackground">
+          <div class="container ">
             <div class="row">
               <div class="col-sm-3">
-                  <p><strong>Feedback</strong></p>
-                  <p><a href="#"><img src="" alt="">icon</a></p>
+                  <p>Feedback</p>
+                  <p><a href="feedback.php"><img src="icon/email.png" alt=""></a></p>
               </div>
-              <div class="col-sm-3 border">
-                <p><strong>Find More</strong></p>
-                <p><a href="#">facebook</a></p>
-                <p><a href="#">instagram</a></p>
-                <p><a href="#">twitter</a></p>
+              <div class="col-sm-3 seperateLine">
+                <p>Find More</p>
+                <p>
+                   <a href="#"><img src="icon/facebook.png" alt=""></a><span style="padding-left:48px;"></span>
+                   <a href="#"><img src="icon/instagram.png" alt=""></a><span style="padding-left:48px;"></span>
+                   <a href="#"><img src="icon/twitter.png" alt=""></a>
+                </p>
+                <p style="color: #bef8d3;">a</p>
               </div>
               <div class="col-sm-3">
-                <p><strong>Contact Us</strong></p>
+                <p>Contact Us</p>
                 <p>Phone</p>
                 <p>Email</p>
               </div>

@@ -1,5 +1,5 @@
 <?php include "navigator.php"; ?>
-<div class="">
+<br>
 <form>
 	  <label for="searchDate">You are looking for menu on </label>
     <input type="date" name="searchDate" value="">
@@ -53,5 +53,6 @@
 		  </tr>
 		</table>
   </div>
-</div>
+<br>
+<br>
 <?php include "footer.php"; ?>
