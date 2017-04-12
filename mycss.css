@@ -62,19 +62,33 @@ hr {
   width: 75%;
   margin: auto;
 }
-
-.border{
+.menuBackground {
+  border-style: none;
+  border-left: thick solid #60c57d;
+  background-color : #CCFFE5;
+  width: 36%;
+}
+.seperateLine{
   border-left: 1px solid #994d00;
   border-right: 1px solid #994d00;
 }
 
 .footer {
   font-family: "Lucida Console", Monaco, monospace;
-  margin-top : 1.5%;
   color: #994d00;
-  padding-left: 220px;
-}
+  padding-left: 240px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  padding-top: 10px;
 
+}
+.footerBackground {
+  border-style: none;
+  border-right: thick solid #60c57d;
+  background-color : #CCFFE5;
+  width: 50%;
+}
 /* feedback */
 .feedback {
   width: 40%;

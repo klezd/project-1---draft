@@ -23,12 +23,12 @@
         <tr></tr>
       </table>
       &nbsp;&nbsp;
-      <div id = "menu">
+      <div id = "menu" class="menuBackground">
         <ul>
           <li><a href="home.php" name="home">Home</a></li>
           <li><a href="menu_book.php" name="menu">Menu Book</a></li>
           <li><a href="cart.php" name="cart">Shopping Cart</a></li>
         </ul>
       </div>
-      <hr style="width: 25%;" />
+      <hr style="width: 36%;" />
       <div id="content">
