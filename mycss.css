@@ -73,10 +73,10 @@ hr {
   border-right: 1px solid #994d00;
 }
 
-.footer {
+#footer {
   font-family: "Lucida Console", Monaco, monospace;
   color: #994d00;
-  padding-left: 240px;
+  padding-left: 25%;
   display: inline-block;
   text-align: center;
   position: relative;
@@ -88,6 +88,7 @@ hr {
   border-right: thick solid #60c57d;
   background-color : #CCFFE5;
   width: 50%;
+  margin: auto;
 }
 /* feedback */
 .feedback {
