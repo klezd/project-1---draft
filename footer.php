@@ -1,7 +1,7 @@
       </div>
 <!-- footer -->
     <hr style="width: 50%;"/>
-    <div class="footer footerBackground">
+    <div class=" footer footerBackground">
           <div class="container ">
             <div class="row">
               <div class="col-sm-3">
