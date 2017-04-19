@@ -22,7 +22,7 @@ hr {
   padding-left: 10px;
   padding-right: 10px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   text-decoration: none;
   color: #994d00;
   border-radius: 5px;
@@ -31,7 +31,7 @@ hr {
 
 /* menu bar */
 #menu {
-  font-family: "Lucida Console", Monaco, monospace;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   margin: 3% auto 0 auto;
   position: relative;
   text-align: center;
@@ -80,7 +80,7 @@ hr {
   padding-top:10px;
 }
 .footerBackground {
-  font-family: "Lucida Console", Monaco, monospace;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   color: #994d00;
   border-style: none;
   border-right: thick solid #60c57d;

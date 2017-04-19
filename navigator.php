@@ -26,18 +26,16 @@
       &nbsp;&nbsp;
       <div id = "menu" class="menuBackground">
         <ul>
-          <li><a href="home.php" name="home">Home</a></li>
-          <li>
-            <div class="dropdown">
-              <button class="dropdown-toggle" type="button" data-toggle="dropdown">Menu Book
-              <span class="caret"></span></button>
+          <li><a href="home.php" name="home"><strong>Home</strong></a></li>
+          <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <strong>Menu Book</strong><span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="main_course.php">Main Course</a></li>
                 <li><a href="#">Dessert</a></li>
               </ul>
-            </div>
           </li>
-          <li><a href="cart.php" name="cart">Shopping Cart</a></li>
+          <li><a href="cart.php" name="cart"><strong>Shopping Cart</strong></a></li>
         </ul>
       </div>
       <hr style="width: 40%;" />
