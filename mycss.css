@@ -74,21 +74,17 @@ hr {
 }
 
 #footer {
-  font-family: "Lucida Console", Monaco, monospace;
-  color: #994d00;
-  padding-left: 25%;
-  display: inline-block;
-  text-align: center;
   position: relative;
-  padding-top: 10px;
-
+  width: 65%;
+  margin: auto;
+  padding-top:10px;
 }
 .footerBackground {
+  font-family: "Lucida Console", Monaco, monospace;
+  color: #994d00;
   border-style: none;
   border-right: thick solid #60c57d;
   background-color : #CCFFE5;
-  width: 50%;
-  margin: auto;
 }
 /* feedback */
 .feedback {
@@ -123,6 +119,8 @@ fieldset {
 * {box-sizing:border-box}
 body {font-family: Verdana,sans-serif;margin:0}
 .mySlides {display:none}
+
+/*table images*/
 
 /* Slideshow container */
 .slideshow-container {

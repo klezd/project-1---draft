@@ -1,8 +1,8 @@
       </div>
 <!-- footer -->
-    <hr style="width: 50%;"/>
-    <div class=" footer footerBackground">
-          <div class="container ">
+    <hr style="width: 65%;"/>
+    <div id="footer" class="content footerBackground">
+          <div class="container centerText ">
             <div class="row">
               <div class="col-sm-3">
                   <p>Feedback</p>

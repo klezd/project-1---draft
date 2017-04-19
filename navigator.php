@@ -6,14 +6,11 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="mycss.css" type="text/css"  rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<<<<<<< HEAD
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-=======
         <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
         <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
         <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.js"></script>
         <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
->>>>>>> master
         <script src="signupform.js"></script>
     </head>
     <body >
@@ -43,5 +40,5 @@
           <li><a href="cart.php" name="cart">Shopping Cart</a></li>
         </ul>
       </div>
-      <hr style="width: 36%;" />
+      <hr style="width: 40%;" />
       <div id="content">
