@@ -42,3 +42,20 @@ $(document).ready(function(){
     }
   })
 });
+
+function checkUsername(str) {
+  if (str.length == 0) {
+    document.getElementById("check_username").innerHTML = "";
+    return;
+  }
+  else {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("check_username").innerHTML = this.responseText;
+      }
+    };
+    xmlhttp.open("GET", "check_username.php?u=" + str, true);
+    xmlhttp.send();
+  }
+};

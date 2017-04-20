@@ -3,7 +3,7 @@
 	{
 	 $dsn = "mysql:host=localhost;dbname=asian_aroma";
 	 $db = new PDO ($dsn, "user", "test");
-
+	 $db->setAttribute (PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	}
 	catch (PDOException $e)
 	{

@@ -1,19 +1,19 @@
 <?php include "navigator.php"; ?>
 
 <h2 style="text-align:center;"> Welcome back, USER! </h2>
-<form  method="post" action="" style="width:500px; padding: 10px; margin:auto;">
+<form  method="post" action="signin.php" style="width:500px; padding: 10px; margin:auto;">
   <fieldset>
   <legend> Sign in here </legend>
   <div class="form-group row">
     <label class="control-label col-sm-2" for="username">Username</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+      <input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
     </div>
   </div>
   <div class="form-group row">
     <label class="control-label col-sm-2" for="password">Password</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+      <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
     </div>
   </div>
   <div class="form-group">
@@ -36,4 +36,44 @@
   </div>
 </fieldset>
 </form>
+
+<?php
+include "connection.php";
+if(isset($_POST['btnSignin']))
+{
+  $user = $_POST['username'];
+  $pass = $_POST['password'];
+
+  $sql = "SELECT password FROM customers where username=\"".$user."\"";
+  $result = $db->prepare($sql);
+  $result->execute(array($user));
+
+  $count = $result->rowCount();
+  echo $result;
+  echo $count;
+  echo $user;
+  echo $pass;
+  if($count==0){
+  		echo "<script type=\"text/javascript\">alert(\"wrong username/password\");</script>"; /* User doesn't exist */
+  	}
+  	else {
+  		$res2 = $result->fetchAll(PDO::FETCH_ASSOC);
+  		foreach ($res2 as $value) {
+
+  			if ($pass == $value['password']) {
+  				header("Location: home.php"); /* Redirect browser to page home.php */
+  				exit();
+  			} else {
+  				echo "<script type=\"text/javascript\">alert(\"wrong username/password\");</script>"; /* Password didn't match */
+  			}
+  		}
+  	}
+}
+if(isset($_POST['btnCancel']))
+{
+  header("Location: home.php");
+}
+?>
+
+
 <?php include "footer.php"; ?>

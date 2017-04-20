@@ -1,15 +1,19 @@
 <?php
-include "connection.php";
-if(isset($_POST['username']))
+$username_input = trim($_GET['username']);
+
+if($username_input!="")
 {
- $uname_input = mysql_real_escape_string($_POST['username']);
- $checkusername = "SELECT count(*) as num FROM customers where username=".$uname_input;
- $count = $db->query($checkusername);
- console.log($count);
- if ($count != 0)
-  {
-  echo "<p id=\"check_username\" class=\"col-sm-offset-4 col-sm-8\" style=\"font-style:italic; font-weight:bold; display: block\">";
-  echo "The username ".$uname_input." has exist</p>";
-  }
+$sql="select username from customers where username='$username_input'";
+$user_array=array();
+$rdata=mysql_query($sql);
+$res=mysql_fetch_array($rdata);
+if($res['username']==$username_input)
+{
+echo " <p style=\"color:red;\"><b>\"$username_input\"</b> is not available.</p>";
 }
- ?>
+else
+{
+echo "<p style=\"color:green;\"><b>\"$username_input\"</b> is available.</p>";
+}
+}
+?>
