@@ -60,7 +60,7 @@ hr {
 
 /*div content */
 #content {
-  width: 70%;
+  width: 55%;
   margin: auto;
 }
 .menuBackground {
@@ -76,7 +76,7 @@ hr {
 
 #footer {
   position: relative;
-  width: 65%;
+  width: 63%;
   margin: auto;
   padding-top:10px;
 }
@@ -86,6 +86,7 @@ hr {
   border-style: none;
   border-right: thick solid #60c57d;
   background-color : #CCFFE5;
+  position: relative;
 }
 .product {
   width : 85%;
