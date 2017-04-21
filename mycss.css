@@ -59,7 +59,7 @@ hr {
 
 /*div content */
 #content {
-  width: 75%;
+  width: 70%;
   margin: auto;
 }
 .menuBackground {
@@ -86,6 +86,33 @@ hr {
   border-right: thick solid #60c57d;
   background-color : #CCFFE5;
 }
+.product {
+  width : 85%;
+  margin : auto;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+#selection{
+	width: 250px;
+	height: 300px;
+	position: relative;
+	float: left;
+	padding : 5px;
+	margin : 5px;
+	border: 1px solid #994d00 ;
+	text-align : center;
+	background-color:#CCFFE5;
+}
+
+#dish img{
+	width : 100%;
+	height: auto;
+}
+
+.title {
+	margin-top : 10px;
+	margin-bottom : 10px;
+}
+
 /* feedback */
 .feedback {
   width: 40%;

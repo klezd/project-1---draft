@@ -1,5 +1,6 @@
-      </div>
+    </div>
 <!-- footer -->
+    <br>
     <hr style="width: 65%;"/>
     <div id="footer" class="content footerBackground">
           <div class="container centerText ">
