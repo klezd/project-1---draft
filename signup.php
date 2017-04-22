@@ -16,10 +16,10 @@
   <div class="form-group row">
     <label class="control-label col-sm-4" for="username">Username</label>
     <div class="col-sm-8">
-      <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" onKeyUp="checkUsername(this.value)" >
+      <input type="text" class="form-control" id="username" name="username" placeholder="Enter username"  >
     </div>
   </div>
-  <p id="check_username" class="col-sm-offset-4 col-sm-8" style="font-style:italic; font-weight:bold; display: block">abc</p>
+  
   <div class="form-group row">
     <label class="control-label col-sm-4" for="password">Password</label>
     <div class="col-sm-8">
