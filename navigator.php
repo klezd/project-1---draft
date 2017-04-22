@@ -15,9 +15,26 @@
         <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
         <link href="mycss.css" type="text/css"  rel="stylesheet">
         <script src="signupform.js"></script>
+        <script type="text/javascript">
 
+          function hidemenu(){
+            document.getElementById('menubook').style.display="none";
+          };
+		      function openmenu() {
+			         var x= document.getElementById('menubook');
+			         var y = x.getAttribute("style");
+			         if (y=="display: none;")
+          			{
+          				document.getElementById('menubook').style.display="block";
+          			} else
+          			{
+          				x.style.display="none";
+          			}
+           };
+
+        </script>
     </head>
-    <body >
+    <body onload="hidemenu()">
 
       <table id="login">
         <tr>
@@ -32,7 +49,7 @@
         <ul>
           <li><a href="home.php" name="home"><strong>Home</strong></a></li>
           <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" name="menubook" href="#" >
+              <a class="dropdown-toggle" data-toggle="dropdown" name="menubook" href="#" onmouseover="openmenu()">
               <strong>Menu Book</strong><span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="main_course.php">Main Course</a></li>
