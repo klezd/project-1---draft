@@ -39,7 +39,7 @@
           </div>
         </div>
         <div class="form-group row">
-          <label class="control-label col-sm-2" for="phonenum">Telephone</label>
+          <label class="control-label col-sm-2" for="phonenum">Tele - phone</label>
           <div class="col-sm-10">
             <input type="tel" class="form-control" id="phonenum" placeholder="Enter your phone number here">
           </div>
@@ -52,7 +52,6 @@
         </div>
         <div class="form-group">
           <div class="col-sm-offset-10 col-sm-3">
-            &nbsp; &ensp;
             <button type="submit" class="btn btn-primary" name="btnSend">Send</button>
           </div>
         </div>
