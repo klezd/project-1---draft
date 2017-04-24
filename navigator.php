@@ -20,17 +20,12 @@
           function hidemenu(){
             document.getElementById('menubook').style.display="none";
           };
-		      function openmenu() {
-			         var x= document.getElementById('menubook');
-			         var y = x.getAttribute("style");
-			         if (y=="display: none;")
-          			{
-          				document.getElementById('menubook').style.display="block";
-          			} else
-          			{
-          				x.style.display="none";
-          			}
-           };
+		      function openmenubyhover() {
+ 			      document.getElementById('menubook').style.display="block";
+          };
+          function closemenu() {
+            document.getElementById('menubook').style.display="none";
+          };
 
         </script>
     </head>
@@ -48,8 +43,8 @@
       <div id = "menu" class="menuBackground">
         <ul>
           <li><a href="home.php" name="home"><strong>Home</strong></a></li>
-          <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" name="menubook"  href="#" onmousemove="openmenu()" onclick="openmenu()">
+          <li class="dropdown" onmouseover="openmenubyhover()" onmouseleave="closemenu()">
+              <a class="dropdown-toggle" data-toggle="dropdown" name="menubook"  href="#">
               <strong>Menu Book</strong><span class="caret"></span></a>
               <ul class="dropdown-menu" id="menubook">
                 <li><a href="main_course.php">Main Course</a></li>
