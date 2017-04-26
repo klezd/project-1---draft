@@ -1,5 +1,5 @@
 <?php include "navigator.php"; ?>
-
+<?php include "header_login.php"; ?>
 <h2 style="text-align:center;"> Welcome back, USER! </h2>
 <form  method="post" action="signin.php" style="width:500px; padding: 10px; margin:auto;">
   <fieldset>
@@ -41,18 +41,16 @@
 include "connection.php";
 if(isset($_POST['btnSignin']))
 {
-  $user = $_POST['username'];
-  $pass = $_POST['password'];
+  session_start();
+  $username = $_POST['username'];
+  $password = $_POST['password'];
 
-  $sql = "SELECT password FROM customers where username=\"".$user."\"";
+  $sql = "SELECT password FROM customers where username=\"".$username."\"";
   $result = $db->prepare($sql);
-  $result->execute(array($user));
+  $result->execute(array($username));
 
   $count = $result->rowCount();
-  echo $result;
-  echo $count;
-  echo $user;
-  echo $pass;
+
   if($count==0){
   		echo "<script type=\"text/javascript\">alert(\"wrong username/password\");</script>"; /* User doesn't exist */
   	}
@@ -60,10 +58,18 @@ if(isset($_POST['btnSignin']))
   		$res2 = $result->fetchAll(PDO::FETCH_ASSOC);
   		foreach ($res2 as $value) {
 
-  			if ($pass == $value['password']) {
-  				header("Location: home.php"); /* Redirect browser to page home.php */
+  			if ($password == $value['password']) {
+          $_SESSION['username'] = $username;
+          $name_query = "SELECT name FROM customers where username='$username'"; /*get name of user from dtb */
+          $_SESSION['name'] = $db->execute($name_query);
+          echo'
+          <script>
+            window.alert("You have successfully signed in!");
+            setTimeout(function(){ window.open("home.php", "_self")}, 500);
+          </script>'; /* Redirect browser to page home.php */
   				exit();
-  			} else {
+  			}
+        else {
   				echo "<script type=\"text/javascript\">alert(\"wrong username/password\");</script>"; /* Password didn't match */
   			}
   		}

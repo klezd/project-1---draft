@@ -1,4 +1,5 @@
 <?php include "navigator.php"; ?>
+<?php include "header_login.php"; ?>
   <h2> Feedback for Asian Aroma </h2>
 
   <div class="feedback">

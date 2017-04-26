@@ -29,6 +29,35 @@ hr {
   background-color: #CCFFE5;
 }
 
+#userfield {
+  margin: 10px 3px auto auto;
+  margin-right: 20px;
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+}
+
+#userfield .font{
+  color: #994d00;
+  border-radius: 5px;
+  background-color: #CCFFE5;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#userfield .nameholder {
+  color: #994d00;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 14px;
+  background-color: #CCFFE5;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 /* menu bar */
 #menu {
   font-family: "Trebuchet MS", Helvetica, sans-serif;

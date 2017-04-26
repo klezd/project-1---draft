@@ -1,5 +1,6 @@
 <?php
 include "connection.php";
+session_start();
 $uname_input = $_POST['username'];
 $checkusername = "SELECT username  FROM customers where username=?";
 $result1 = $db->prepare($checkusername);
@@ -46,11 +47,12 @@ else
     $add->bindParam(':password', $password);
 
     $add->execute();
-
+    $_SESSION['username'] = $username;
+    $_SESSION['name'] = $name;
     echo'
     <script>
       window.alert("You have successfully signed up!");
-      setTimeout(function(){ window.open("home.php", "_self")}, 1000);
+      setTimeout(function(){ window.open("home.php", "_self")}, 500);
     </script>';
 }
 ?>

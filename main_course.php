@@ -1,5 +1,5 @@
 <?php include "navigator.php"; ?>
-
+<?php include "header_login.php"; ?>
 <h3>Main Course</h3><br>
 <div class="title"><h4>Vietnamese Cuisine</h4></div>
     <div id="display">

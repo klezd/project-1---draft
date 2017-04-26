@@ -33,12 +33,13 @@
 
       <table id="login">
         <tr>
-          <td><a href="signin.php" class="font" name="signin">Sign in</a></td>
+          <td><a href="signin.php" class="font" id="signinBtn" name="signin">Sign in</a></td>
           <td style="border-left: 1px solid #994d00;"> </td>
-          <td><a href="signup.php" class="font" name="signup">Sign up</a></td>
+          <td><a href="signup.php" class="font" id="signupBtn" name="signup">Sign up</a></td>
         </tr>
         <tr></tr>
       </table>
+      <table id="userfield"></table>
       &nbsp;&nbsp;
       <div id = "menu" class="menuBackground">
         <ul>
