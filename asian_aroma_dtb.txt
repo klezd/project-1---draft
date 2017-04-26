@@ -7,37 +7,21 @@ GRANT ALL ON asian_aroma.* TO 'user'@'localhost' IDENTIFIED BY 'test';
 CREATE TABLE menu(
     dish_id SMALLINT PRIMARY KEY,
     dname VARCHAR(45) NOT NULL,
-    img TEXT,
-    detailed TEXT,
-    price DOUBLE NOT NULL,
-    available DATE NOT NULL) Engine=InnoDB;
+    type VARCHAR(30) NOT NULL,
+    origine VARCHAR(30),
+    price DOUBLE NOT NULL,    
+    info TEXT) Engine=InnoDB;
 
-INSERT INTO menu(dish_id,dname,price,available) VALUES(1,'broken rice with grilled pork',10.5,'2017-04-24');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(2,'dumplings',9.5,'2017-04-24');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(3,'paneang thai curry',11,'2017-04-24');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(4,'crispy spring rolls',9,'2017-04-25');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(5,'mapo tofu',9.5,'2017-04-25');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(6,'shrimp paste fried rice',10,'2017-04-25');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(7,'crispy noodles',10.5,'2017-04-26');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(8,'fried rice',10,'2017-04-26');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(9,'pancakes',9.5,'2017-04-26');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(10,'peking duck',13,'2017-04-27');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(11,'rice noodles with grilled meat',11,'2017-04-27');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(12,'spring rolls',9.5,'2017-04-27');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(13,'stuffed pancakes',10,'2017-04-28');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(14,'sweet and sour pork',10.5,'2017-04-28');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(15,'thai basil chicken',11,'2017-04-28');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(16,'almond tofu',7,'2017-04-24');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(17,'avocado pudding',6.5,'2017-04-24');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(18,'black sesame sweet soup',7.5,'2017-04-25');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(19,'caramel pudding',6,'2017-04-25');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(20,'coconut sticky rice cake',8,'2017-04-26');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(21,'colorful sweet soup',8,'2017-04-26');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(22,'corn sweet soup',7.5,'2017-04-27');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(23,'durian crepe cake',8.5,'2017-04-27');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(24,'egg tart',7.5,'2017-04-28');
-INSERT INTO menu(dish_id,dname,price,available) VALUES(25,'lotus bean sweet soup',9,'2017-04-28');
-
+INSERT INTO menu(dish_id,dname,type,origine,price) VALUES(1,'Pancakes','main course','Vietnamese',9.5);
+INSERT INTO menu(dish_id,dname,type,origine,price) VALUES(2,'Broken rice with grilled pork','main course','Vietnamese',11.5);
+INSERT INTO menu(dish_id,dname,type,origine,price) VALUES(3,'Crispy noodles','main course','Chinese',10.5);
+INSERT INTO menu(dish_id,dname,type,origine,price) VALUES(4,'Pekingduck','main course','Chinese',13);
+INSERT INTO menu(dish_id,dname,type,origine,price) VALUES(5,'Paneang Thai curry','main course','Thai',10.5);
+INSERT INTO menu(dish_id,dname,type,origine,price) VALUES(6,'Shrimp paste fried rice','main course','Thai',11);
+INSERT INTO menu(dish_id,dname,type,price) VALUES(7,'caramel pudding','dessert',6.5);
+INSERT INTO menu(dish_id,dname,type,price) VALUES(8,'avocado pudding','dessert',7);
+INSERT INTO menu(dish_id,dname,type,price) VALUES(9,'egg tart','dessert',7.5);
+INSERT INTO menu(dish_id,dname,type,price) VALUES(10,'coconut sticky rice cake','dessert',8);
 
 CREATE TABLE customers(
   customer_id INT PRIMARY KEY auto_increment,
@@ -45,17 +29,17 @@ CREATE TABLE customers(
   email VARCHAR(80) NOT NULL,
   phone VARCHAR(15),
   address VARCHAR(45),
-  username VARCHAR(45) NOT NULL,
-  password VARCHAR(80) NOT NULL) Engine=InnoDB;
+  username VARCHAR(45),
+  password VARCHAR(80)) Engine=InnoDB;
 
 CREATE TABLE delivery(
   dish_id SMALLINT,
   customer_id INT,
   quantity SMALLINT(2),
-  order_date DATE,
   FOREIGN KEY (dish_id)
 		REFERENCES menu(dish_id)
 		ON DELETE RESTRICT ON UPDATE CASCADE,
   FOREIGN KEY (customer_id)
   		REFERENCES customers(customer_id)
   		ON DELETE RESTRICT ON UPDATE CASCADE) Engine=InnoDB;
+
