@@ -48,7 +48,7 @@
               <strong>Menu Book</strong><span class="caret"></span></a>
               <ul class="dropdown-menu" id="menubook">
                 <li><a href="main_course.php">Main Course</a></li>
-                <li><a href="#">Dessert</a></li>
+                <li><a href="dessert.php">Dessert</a></li>
               </ul>
           </li>
           <li><a href="cart.php" name="cart"><strong>Shopping Cart</strong></a></li>

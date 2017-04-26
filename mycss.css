@@ -75,29 +75,33 @@ hr {
 }
 
 #footer {
-  position: relative;
-  width: 63%;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #994d00;
+  position: static;
+  width: 65%;
+  background-color: #CCFFE5;
+  border-style: none;
+  border-right: thick solid #60c57d;
   margin: auto;
   padding-top:10px;
 }
 .footerBackground {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  color: #994d00;
-  border-style: none;
-  border-right: thick solid #60c57d;
-  background-color : #CCFFE5;
-  position: relative;
+
+
+
+  position: static;
 }
-.product {
-  width : 85%;
+
+
+#display {
+  width : 60%;
   margin : auto;
   font-family: Tahoma, Geneva, sans-serif;
 }
 #selection{
-	width: 250px;
-	height: 300px;
-	position: relative;
-	float: left;
+	width: 200px;
+	height: 250px;
+	display: inline-block;
 	padding : 5px;
 	margin : 5px;
 	border: 1px solid #994d00 ;
