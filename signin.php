@@ -45,7 +45,7 @@ if(isset($_POST['btnSignin']))
   $username = $_POST['username'];
   $password = $_POST['password'];
 
-  $sql = "SELECT password FROM customers where username=\"".$username."\"";
+  $sql = "SELECT password FROM customers where username=?";
   $result = $db->prepare($sql);
   $result->execute(array($username));
 
@@ -60,14 +60,16 @@ if(isset($_POST['btnSignin']))
 
   			if ($password == $value['password']) {
           $_SESSION['username'] = $username;
-          $name_query = "SELECT name FROM customers where username='$username'"; /*get name of user from dtb */
-          $_SESSION['name'] = $db->execute($name_query);
-          echo'
-          <script>
-            window.alert("You have successfully signed in!");
-            setTimeout(function(){ window.open("home.php", "_self")}, 500);
-          </script>'; /* Redirect browser to page home.php */
-  				exit();
+          $name_query = "SELECT name FROM customers where username=?"; /*get name of user from dtb */
+          $name_statement = $db->prepare($name_query);
+          $name_statement->execute(array($username));
+          $name_result = $name_statement->fetchAll(PDO::FETCH_ASSOC);
+          $_SESSION["name"]=$name_result[0]["name"];
+          echo "<script>";
+          echo "window.alert(\"You have successfully signed in!\");";
+          echo "setTimeout(function(){ window.open(\"home.php\", \"_self\")}, 500);";
+          echo "</script>"; /* Redirect browser to page home.php */
+  				break;
   			}
         else {
   				echo "<script type=\"text/javascript\">alert(\"wrong username/password\");</script>"; /* Password didn't match */
