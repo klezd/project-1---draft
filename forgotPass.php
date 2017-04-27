@@ -1,20 +1,20 @@
 <?php include "navigator.php"; ?>
 
 <h2 style="text-align:center;"> Reset Password </h2>
-<form class="form-horizontal signinform" method="post" action="" style="width:500px; padding: 10px; margin:auto;">
+<form class="form-horizontal signinform" method="post" action="checkUserexist.php" style="width:500px; padding: 10px; margin:auto;">
   <div style="text-align:center;">
     If you forgot your password, fill in this form and the link to reset your password will be sent to your email address.
   </div> &nbsp;
   <div class="form-group">
-    <label class="control-label col-sm-2" for="uname">Username</label>
+    <label class="control-label col-sm-2" for="username">Username</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="uname" placeholder="Enter username" required>
+      <input type="text" class="form-control" name="username" id="username" placeholder="Enter username" required>
     </div>
   </div>
   <div class="form-group">
     <label class="control-label col-sm-2" for="email">Email</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+      <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" required>
     </div>
   </div>
   <div class="form-group">

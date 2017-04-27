@@ -115,10 +115,7 @@ hr {
   padding-top:10px;
 }
 .footerBackground {
-
-
-
-  position: static;
+    position: static;
 }
 
 
@@ -162,16 +159,7 @@ hr {
   padding: 0 10px;
 }
 
-fieldset {
-    display: block;
-    margin-left: 2px;
-    margin-right: 2px;
-    padding-top: 0.35em;
-    padding-bottom: 0.625em;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
-    border: 2px groove (internal value);
-}
+
 
 .centerText {
   display: inline-block;;
@@ -275,4 +263,60 @@ body {font-family: Verdana,sans-serif;margin:0}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+
+/*cart */
+#cart_table {
+  width:80%;
+  margin:auto;
+
+}
+
+#cart_table th {
+	height: 50px;
+	text-align: center;
+}
+
+#cart_table td {
+	height: 30px;
+	text-align: center;
+
+}
+
+/*purchase*/
+
+.contact_form {
+  width: 55%;
+  margin: auto;
+  font-size: 13spx;
+  font-weight: lighter;
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.contact_form legend {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.payment_field {
+  width: 80%;
+  margin: auto;
+}
+
+
+.payment_method_hide {
+  display: none;
+}
+
+.payment_method_show{
+  display: block;
+}
+
+.cardpayment {
+  width: 50%;
+
+  padding: 10px;
 }

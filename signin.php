@@ -18,7 +18,7 @@
   </div>
   <div class="form-group">
     <div class="col-sm-offset-7 col-sm-8">
-      &emsp;&ensp;&nbsp;
+
       <button type="submit" class="btn btn-info" name="btnSignin">Sign In</button>
       &ensp;
       <button type="button" class="btn" name="btnCancel">Cancel</button>
@@ -79,7 +79,7 @@ if(isset($_POST['btnSignin']))
 }
 if(isset($_POST['btnCancel']))
 {
-  header("Location: home.php");
+  echo "<script>setTimeout(function(){ window.open(\"home.php\", \"_self\")}, 200);</script>";
 }
 ?>
 
