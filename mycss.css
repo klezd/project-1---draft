@@ -273,3 +273,22 @@ body {font-family: Verdana,sans-serif;margin:0}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+
+/*cart */
+#cart_table {
+  width:80%;
+  margin:auto;
+  
+}
+
+#cart_table th {
+	height: 50px;
+	text-align: center;
+}
+
+#cart_table td {
+	height: 30px;
+	text-align: center;
+
+}
