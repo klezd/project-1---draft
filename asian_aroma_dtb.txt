@@ -9,7 +9,8 @@ CREATE TABLE menu(
     dname VARCHAR(45) NOT NULL,
     type VARCHAR(30) NOT NULL,
     origine VARCHAR(30),
-    price DOUBLE NOT NULL,    
+    price DOUBLE NOT NULL,
+    image TEXT,    
     info TEXT) Engine=InnoDB;
 
 INSERT INTO menu(dish_id,dname,type,origine,price) VALUES(1,'Pancakes','main course','Vietnamese',9.5);
@@ -23,6 +24,17 @@ INSERT INTO menu(dish_id,dname,type,price) VALUES(8,'avocado pudding','dessert',
 INSERT INTO menu(dish_id,dname,type,price) VALUES(9,'egg tart','dessert',7.5);
 INSERT INTO menu(dish_id,dname,type,price) VALUES(10,'coconut sticky rice cake','dessert',8);
 
+UPDATE menu SET image='menu/vnese/pancakes.jpg' WHERE dish_id=1;
+UPDATE menu SET image='menu/vnese/broken rice with grilled pork.jpg' WHERE dish_id=2;
+UPDATE menu SET image='menu/chinese/crispy noodles.jpg' WHERE dish_id=3;
+UPDATE menu SET image='menu/chinese/pekingduck.jpg' WHERE dish_id=4;
+UPDATE menu SET image='menu/thai/paneang thai curry.jpg' WHERE dish_id=5;
+UPDATE menu SET image='menu/thai/shrimp paste fried rice.jpg' WHERE dish_id=6;
+UPDATE menu SET image='menu/caramel-pudding.jpg' WHERE dish_id=7;
+UPDATE menu SET image='menu/avocado pudding.jpg' WHERE dish_id=8;
+UPDATE menu SET image='menu/egg tart.jpg'WHERE dish_id=9;
+UPDATE menu SET image='menu/coconut sticky rice cake.jpg'WHERE dish_id=10;
+
 CREATE TABLE customers(
   customer_id INT PRIMARY KEY auto_increment,
   name VARCHAR(45) NOT NULL,
@@ -30,7 +42,7 @@ CREATE TABLE customers(
   phone VARCHAR(15),
   address VARCHAR(45),
   username VARCHAR(45),
-  password VARCHAR(80)) Engine=InnoDB;
+  password VARCHAR(45)) Engine=InnoDB;
 
 CREATE TABLE delivery(
   dish_id SMALLINT,
