@@ -4,7 +4,7 @@
   <br>
   <img src="icon/shopping_cart.png" alt="shopping cart" width="40px"> &nbsp; <span style="font-size:20px">Review Your Orders</span>
 </div>
-<form class="" action="" method="post">
+<form class="" action="purchase.php" method="post">
   <table id="cart_table">
     <tr>
       <th>Detail</th>
