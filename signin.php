@@ -1,7 +1,7 @@
 <?php include "navigator.php"; ?>
 <?php include "header_login.php"; ?>
 <h2 style="text-align:center;"> Welcome back, USER! </h2>
-<form  method="post" action="signin.php" style="width:500px; padding: 10px; margin:auto;">
+<form  method="post" action="signin.php" style="width:80%; border: 1px solid black; padding: 15px; margin:auto;">
   <fieldset>
   <legend> Sign in here </legend>
   <div class="form-group row">
@@ -17,15 +17,15 @@
     </div>
   </div>
   <div class="form-group">
-    <div class="col-sm-offset-7 col-sm-8">
+    <div class="col-sm-offset-9 col-sm-6">
 
       <button type="submit" class="btn btn-info" name="btnSignin">Sign In</button>
-      &ensp;
+
       <button type="button" class="btn" name="btnCancel">Cancel</button>
     </div>
   </div>
   <div class="form-group row">
-    <div class="col-sm-offset-6 col-sm-8">
+    <div class="col-sm-offset-7 col-sm-8">
         <div>
           <br>
           &nbsp;
