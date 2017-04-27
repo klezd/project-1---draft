@@ -19,7 +19,7 @@
       <input type="text" class="form-control" id="username" name="username" placeholder="Enter username"  >
     </div>
   </div>
-  
+
   <div class="form-group row">
     <label class="control-label col-sm-4" for="password">Password</label>
     <div class="col-sm-8">
@@ -46,7 +46,7 @@
   </div>
   <div class="form-group">
     <div class="col-sm-offset-7 col-sm-8">
-       &emsp;
+
       <button type="submit" class="btn btn-info" name="btnSignup">Sign Up</button>
       &emsp;
       <button type="button" class="btn" name="btnCancel">Cancel</button>
