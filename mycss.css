@@ -1,15 +1,34 @@
 body {
-  background-color: #bef8d3;
+  background-color: #ffffcc;
+  color: #994d00;
+  font-family: Georgia, serif;
+}
+h1,h2,h3,h4{
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
 }
 h2 {
   text-align: center;
 }
 
 hr {
-
  margin-top : 0;
  margin-bottom: 0;
- border-top: 1px solid #60c57d;
+ border-top: 2px dotted #ffcc99;
+}
+
+th {
+  background-color:#b3d9ff;
+}
+
+td{
+  background-color:white;
+}
+.table-bordered {
+    border: 2px outset #ddd;
+}
+
+button {
+  border : 2px solid ##ffcc99;
 }
 /* login-button in header */
 #login {
@@ -21,12 +40,12 @@ hr {
 #login .font {
   padding-left: 10px;
   padding-right: 10px;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 14px;
   text-decoration: none;
-  color: #994d00;
+  color: #ffaa00;
   border-radius: 5px;
-  background-color: #CCFFE5;
+  background-color: #e6ffcc;
 }
 
 #userfield {
@@ -42,7 +61,7 @@ hr {
   color: #994d00;
   border-radius: 5px;
   background-color: #CCFFE5;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 14px;
   text-decoration: none;
   padding-left: 10px;
@@ -51,7 +70,7 @@ hr {
 
 #userfield .nameholder {
   color: #994d00;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 14px;
   background-color: #CCFFE5;
   padding-left: 10px;
@@ -60,7 +79,7 @@ hr {
 
 /* menu bar */
 #menu {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   margin: 3% auto 0 auto;
   position: relative;
   text-align: center;
@@ -72,13 +91,13 @@ hr {
 }
 #menu li {
   float: left;
-  margin: 0 20px;
+  margin: 0 35px;
 }
 #menu li a {
   display: block;
-  padding: 10px 15px 5px 15px;
+  padding: 15px 15px 15px 15px;
   text-decoration: none;
-  color: #994d00;
+  color: #ffaa00;
 }
 #menu li a:hover {
   background-color: #CCFFE5;
@@ -94,8 +113,8 @@ hr {
 }
 .menuBackground {
   border-style: none;
-  border-left: thick solid #60c57d;
-  background-color : #CCFFE5;
+  border-left: thick solid #ffd9b3;
+  background-color :#e6ffcc;
   width: 40%;
 }
 .seperateLine{
@@ -104,13 +123,13 @@ hr {
 }
 
 #footer {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  color: #994d00;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #ffaa00;
   position: static;
   width: 65%;
-  background-color: #CCFFE5;
+  background-color: #e6ffcc;
   border-style: none;
-  border-right: thick solid #60c57d;
+  border-right: thick solid #ffd9b3;
   margin: auto;
   padding-top:10px;
 }
@@ -118,36 +137,25 @@ hr {
     position: static;
 }
 
-
-#display {
-  width : 60%;
-  margin : auto;
-  font-family: Tahoma, Geneva, sans-serif;
-}
-#selection{
-	width: 200px;
-	height: 250px;
-	display: inline-block;
-	padding : 5px;
-	margin : 5px;
-	border: 1px solid #994d00 ;
-	text-align : center;
-	background-color:#CCFFE5;
-}
-
-#dish img{
-	width : 100%;
-	height: auto;
-}
-
 .title {
-	margin-top : 10px;
-	margin-bottom : 10px;
+ font-family: Georgia, serif;
 }
 
+fieldset.border{
+  border: 1px solid #994d00;;
+  padding: 0 10px 10px 10px;
+}
+
+legend.border{
+    width: auto !important;
+    border: none;
+    color: #ffaa00;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 15px;
+}
 /* feedback */
 .feedback {
-  width: 55%;
+  width: 70%;
   margin: auto;
 }
 .rateIcon {
@@ -167,49 +175,21 @@ hr {
 }
 
 * {box-sizing:border-box}
-body {font-family: Verdana,sans-serif;margin:0}
+body {font-family: Verdana,sans-serif;}
 .mySlides {display:none}
-
-/*table images*/
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 500px;
-  max-height: 380px;
+  max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
+  color: #fff5e6;
+  font-size: 25px;
+  font-family: Tahoma, Geneva, sans-serif;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -219,8 +199,8 @@ body {font-family: Verdana,sans-serif;margin:0}
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
+  color: #fff5e6;
+  font-size: 18px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
@@ -228,17 +208,16 @@ body {font-family: Verdana,sans-serif;margin:0}
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor:pointer;
   height: 13px;
   width: 13px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #ccccff;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active {
   background-color: #717171;
 }
 
@@ -262,7 +241,7 @@ body {font-family: Verdana,sans-serif;margin:0}
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+  .text {font-size: 11px}
 }
 
 

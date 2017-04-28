@@ -23,6 +23,8 @@ INSERT INTO menu(dish_id,dname,type,price) VALUES(7,'caramel pudding','dessert',
 INSERT INTO menu(dish_id,dname,type,price) VALUES(8,'avocado pudding','dessert',7);
 INSERT INTO menu(dish_id,dname,type,price) VALUES(9,'egg tart','dessert',7.5);
 INSERT INTO menu(dish_id,dname,type,price) VALUES(10,'coconut sticky rice cake','dessert',8);
+INSERT INTO menu(dish_id,dname,type,price,image) VALUES(11,'durian crepe cake','dessert',8.5,'menu/durian crepe cake.jpg');
+INSERT INTO menu(dish_id,dname,type,price,image) VALUES(12,'green tea crepe','dessert',9,'menu/green tea crepe.jpg');
 
 UPDATE menu SET image='menu/vnese/pancakes.jpg' WHERE dish_id=1;
 UPDATE menu SET image='menu/vnese/broken rice with grilled pork.jpg' WHERE dish_id=2;
