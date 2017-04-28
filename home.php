@@ -5,28 +5,42 @@
 <!-- img slide show -->
 <div class="slideshow-container">
   <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="menu/almond tofu.jpg" style="height: 380px;width:100%">
-    <div class="text">Almond Tofu</div>
+    <div class="numbertext">1 / 5</div>
+    <img src="menu/thai/shrimp paste fried rice.jpg" style="height: 380px;width:100%">
+    <div class="text">Shrimp Paste Fried Rice</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
+    <div class="numbertext">2 / 5</div>
+    <img src="menu/durian crepe cake.jpg" style="height: 380px;width:100%">
+    <div class="text">Durian Crepe Cake</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="menu/vnese/pancakes.jpg" style="height: 380px;width:100%">
+    <div class="text">Pancakes</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
     <img src="menu/avocado pudding.jpg" style="height: 380px;width:100%">
     <div class="text">Avocado Pudding</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="menu/black sesame sweet soup.jpg" style="height: 380px;width:100%">
-    <div class="text">Black Sesame Sweet Soup</div>
+    <div class="numbertext">5 / 5</div>
+    <img src="menu/chinese/pekingduck.jpg" style="height: 380px;width:100%">
+    <div class="text">Pekking Duck</div>
   </div>
 </div>
 <br>
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
 </div>
 
 <script>
@@ -47,7 +61,7 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 1800); // Change image every 2 seconds
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
 </script>
 <?php include "footer.php"; ?>

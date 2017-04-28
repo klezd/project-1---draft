@@ -1,6 +1,9 @@
 <?php include "navigator.php"; ?>
 <h2 style="text-align:center;">Sign Up</h2>
 <form method="post" action="user_signup.php" style="width:500px; padding: 10px; margin:auto;" id="signupform">
+  <fieldset class="border">
+  <legend class="border">Please fill in all required infomation :</legend>
+
   <div class="form-group row">
     <label class="control-label col-sm-4" for="name">Name</label>
     <div class="col-sm-8">
@@ -52,6 +55,7 @@
       <button type="button" class="btn" name="btnCancel">Cancel</button>
     </div>
   </div>
+</fieldset>
 </form>
 <br>
 <?php

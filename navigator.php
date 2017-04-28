@@ -44,15 +44,8 @@
       <div id = "menu" class="menuBackground">
         <ul>
           <li><a href="home.php" name="home"><strong>Home</strong></a></li>
-          <li class="dropdown" onmouseover="openmenubyhover()" onmouseleave="closemenu()">
-              <a class="dropdown-toggle" data-toggle="dropdown" name="menubook"  href="#">
-              <strong>Menu Book</strong><span class="caret"></span></a>
-              <ul class="dropdown-menu" id="menubook">
-                <li><a href="main_course.php">Main Course</a></li>
-                <li><a href="dessert.php">Dessert</a></li>
-              </ul>
-          </li>
-          <li><a href="cart.php" name="cart"><strong>Shopping Cart</strong></a></li>
+          <li><a href="main_course.php" name="order"><strong>Order</strong></a></li>
+          <li><a href="" name="about"><strong>About Us</strong></a></li>
         </ul>
       </div>
       <hr style="width: 40%;" />

@@ -1,15 +1,19 @@
+<?php include "contact.php"; ?>
 <?php include "navigator.php"; ?>
 <?php include "header_login.php"; ?>
+  <?=$thankYou ?>
   <h2> Feedback for Asian Aroma </h2>
 
   <div class="feedback">
     <div class="form-group">
-      <label for="comment">Write Your Comment Here:</label>
-      <textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
+      <form class="" action="contact.php" method="post">
+        <label for="comment">Write Your Comment Here:</label>
+        <textarea class="form-control" rows="5" id="message" name="message"></textarea>
+      </form>
     </div>
     <div class="rate">
       <p><b>How would you like to rate our service?</b></p>
-      <form class="" action="index.html" method="post">
+      <form class="" action="contact.php" method="post">
         <table class="rateIcon">
           <tr>
             <td><img src="icon/happy.png" alt="" width="30px" height="30px"></td>
@@ -32,23 +36,23 @@
     <hr>
     <div class="infoForm">
       <h5 style="font-weight:bold;">Fill you info here: <br></h5>
-      <form class="" action="index.html" method="post">
+      <form class="" action="contact.php" method="post">
         <div class="form-group row">
-          <label class="control-label col-sm-2" for="uname">Name</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="name" placeholder="Enter your name here" required>
+          <label class="control-label col-sm-3" for="uname">Name</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="sender" name="sender" placeholder="Enter your name here" required>
           </div>
         </div>
         <div class="form-group row">
-          <label class="control-label col-sm-2" for="phonenum">Tele - phone</label>
-          <div class="col-sm-10">
-            <input type="tel" class="form-control" id="phonenum" placeholder="Enter your phone number here">
+          <label class="control-label col-sm-3" for="phonenum">Telephone</label>
+          <div class="col-sm-8">
+            <input type="tel" class="form-control" id="phonenum" name="phonenum" placeholder="Enter your phone number here">
           </div>
         </div>
         <div class="form-group row">
-          <label class="control-label col-sm-2" for="email">Email</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="email" placeholder="Enter your email here" required>
+          <label class="control-label col-sm-3" for="email">Email</label>
+          <div class="col-sm-8">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email here" required>
           </div>
         </div>
         <div class="form-group">

@@ -2,8 +2,8 @@
 <?php include "header_login.php"; ?>
 <h2 style="text-align:center;"> Welcome back, USER! </h2>
 <form  method="post" action="signin.php" style="width:500px; padding: 10px; margin:auto;">
-  <fieldset>
-  <legend> Sign in here </legend>
+  <fieldset class="border">
+  <legend class="border"><h5>Sign in here</h5></legend>
   <div class="form-group row">
     <label class="control-label col-sm-2" for="username">Username</label>
     <div class="col-sm-10">
@@ -25,10 +25,9 @@
     </div>
   </div>
   <div class="form-group row">
-    <div class="col-sm-offset-6 col-sm-8">
+    <div class="col-sm-offset-5 col-sm-8">
         <div>
           <br>
-          &nbsp;
           Forgot your password? Click <a href="forgotPass.php">here</a>!
         </div>
     </div>
