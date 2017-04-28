@@ -13,14 +13,37 @@ $result2 = $db->prepare($checkemail);
 $result2->execute(array($email_input));
 $count2 = $result2->rowCount();
 
-if ($count1 != 0 || $count2 != 0 )
+
+$checkemail = "SELECT email  FROM customers where username=?";
+$result3 = $db->prepare($checkemail);
+$result3->execute(array($username_input));
+$count3 = $result3->rowCount();
+
+
+if ($count1 == 0 )
   {
   echo'
   <script>
-    window.alert("Your username/email is not exist. Please check again!");
+    window.alert("Your username is not exist. Please check again!");
     setTimeout(function(){ window.open("forgotPass.php", "_self")}, 300);
   </script>';
   }
+  else if ($count2 == 0 )
+    {
+    echo'
+    <script>
+      window.alert("Your email is not exist. Please check again!");
+      setTimeout(function(){ window.open("forgotPass.php", "_self")}, 300);
+    </script>';
+    }
+    else if ($count3 == 0 )
+      {
+      echo'
+      <script>
+        window.alert("Your email and username are not matched. Please check again!");
+        setTimeout(function(){ window.open("forgotPass.php", "_self")}, 300);
+      </script>';
+      }
 else
   {
     echo'
