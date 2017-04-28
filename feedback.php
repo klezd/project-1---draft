@@ -6,14 +6,14 @@
 
   <div class="feedback">
     <div class="form-group">
-      <form class="" action="contact.php" method="post">
+      <form class="" action="feedback.php" method="post">
         <label for="comment">Write Your Comment Here:</label>
         <textarea class="form-control" rows="5" id="message" name="message"></textarea>
       </form>
     </div>
     <div class="rate">
       <p><b>How would you like to rate our service?</b></p>
-      <form class="" action="contact.php" method="post">
+      <form class="" action="feedback.php" method="post">
         <table class="rateIcon">
           <tr>
             <td><img src="icon/happy.png" alt="" width="30px" height="30px"></td>
@@ -36,7 +36,7 @@
     <hr>
     <div class="infoForm">
       <h5 style="font-weight:bold;">Fill you info here: <br></h5>
-      <form class="" action="contact.php" method="post">
+      <form class="" action="feedback.php" method="post">
         <div class="form-group row">
           <label class="control-label col-sm-3" for="uname">Name</label>
           <div class="col-sm-8">
@@ -67,4 +67,23 @@
   <br>
   <br>
   <br>
+  <?php
+  if(isset($_POST["submit"]))
+  {
+      /*$recipient="roxydao97@gmail.com";
+      $subject="Feedback about Asian Aroma";
+      $sender=$_POST["sender"];
+      $phone=$_POST["phonenum"];
+      $senderEmail=$_POST["email"];
+      $message=$_POST["message"];
+
+      $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+      mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+      $thankYou="<p>Thank you! Your message has been sent.</p>";*/
+      echo "<script>alert("Thank you for your feedback. Your message has been sent!");setTimeout(function(){ window.open(\"home.php\", \"_self\")}, 200);</script>";
+  }
+  ?>
+
 <?php include "footer.php"; ?>
