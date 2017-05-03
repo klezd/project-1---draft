@@ -1,33 +1,51 @@
 <?php include "navigator.php"; ?>
 <?php include "header_login.php"; ?>
-<div style="text-align:center;">
-  <br>
-  <img src="icon/shopping_cart.png" alt="shopping cart" width="40px"> &nbsp; <span style="font-size:20px">Review Your Orders</span>
-</div>
-<form class="" action="purchase.php" method="post">
-  <table id="cart_table">
-    <tr>
-      <th>Detail</th>
-      <th>Name</th>
-      <th>Quantity</th>
-	    <th>Price</th>
-      <th>Action</th>
-    </tr>
-    <!--php code -->
-    <tr>
-      <td style="text-align:right; padding-right:50px" colspan="3">Total Price &ensp;</td>
-      <td colspan="2" style="text-align:left; padding-left:15px"><!--php code to get total price--></td>
+<?php include "add_to_cart.php"; ?>
 
-    </tr>
-  </table>
-  <br />
-  <div class="form-group">
-    <div class="col-sm-offset-8 col-sm-8">
+<h3>Order Details</h3>
+     <div class="table-responsive">
+          <table class="table table-bordered">
+               <tr>
+                    <th width="40%">Item Name</th>
+                    <th width="10%">Quantity</th>
+                    <th width="20%">Price</th>
+                    <th width="15%">Total</th>
+                    <th width="5%">Action</th>
+               </tr>
+               <?php
+               if(!empty($_SESSION["shopping_cart"]))
+               {
+                    $total = 0;
+                    foreach($_SESSION["shopping_cart"] as $keys => $values)
+                    {
+               ?>
+               <tr>
+                    <td><?php echo $values["item_name"]; ?></td>
+                    <td><?php echo $values["item_quantity"]; ?></td>
+                    <td>$ <?php echo $values["item_price"]; ?></td>
+                    <td>$ <?php echo number_format($values["item_quantity"] * $values["item_price"], 2); ?></td>
+                    <td><a href="main_course.php?action=delete&id=<?php echo $values["item_id"]; ?>"><span class="text-danger">Remove</span></a></td>
+               </tr>
+               <?php
+                         $total = $total + ($values["item_quantity"] * $values["item_price"]);
+                    }
+               ?>
+               <tr>
+                    <td colspan="3" align="right">Total</td>
+                    <td colspan="2" align="left">$ <?php echo number_format($total, 2); ?></td>
 
-      <button type="submit" class="btn btn-info" name="btnPurchase">Purchase</button>
-      &ensp;
-      <button type="button" class="btn" name="btnCancel">Empty Cart</button>
-    </div>
-  </div>
-</form>
+               </tr>
+               <tr>
+                   <td colspan="5" align="right">
+                     <a href="purchase.php"><button type="submit" class="btn btn-info" name="btnPurchase">Purchase</button></a>
+                     &nbsp;
+                     <a href="home.php"><button type="button" class="btn" name="btnCancel">Cancel</button></a>
+                   </td>
+               </tr>
+               <?php
+               }
+               ?>
+          </table>
+     </div>
+
 <?php include "footer.php"; ?>

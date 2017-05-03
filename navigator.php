@@ -45,7 +45,7 @@
         <ul>
           <li><a href="home.php" name="home"><strong>Home</strong></a></li>
           <li><a href="main_course.php" name="order"><strong>Order</strong></a></li>
-          <li><a href="" name="about"><strong>About Us</strong></a></li>
+          <li><a href="cart.php" name="about"><strong>Cart</strong></a></li>
         </ul>
       </div>
       <hr style="width: 40%;" />

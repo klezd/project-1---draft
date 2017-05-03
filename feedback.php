@@ -56,8 +56,9 @@
           </div>
         </div>
         <div class="form-group">
-          <div class="col-sm-offset-10 col-sm-3">
+          <div class="col-sm-offset-7 col-sm-5">
             <button type="submit" class="btn btn-primary" name="btnSend">Send</button>
+            <a href="home.php"><button type="button" class="btn" name="btnCancel">Cancel</button></a>
           </div>
         </div>
       </form>
@@ -68,7 +69,7 @@
   <br>
   <br>
   <?php
-  if(isset($_POST["submit"]))
+  if(isset($_POST["btnSend"]))
   {
       /*$recipient="roxydao97@gmail.com";
       $subject="Feedback about Asian Aroma";
@@ -82,7 +83,7 @@
       mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
 
       $thankYou="<p>Thank you! Your message has been sent.</p>";*/
-      echo "<script>alert("Thank you for your feedback. Your message has been sent!");setTimeout(function(){ window.open(\"home.php\", \"_self\")}, 200);</script>";
+      echo "<script>alert(\"Thank you for your feedback. Your message has been sent!\");setTimeout(function(){ window.open(\"home.php\", \"_self\")}, 200);</script>";
   }
   ?>
 
